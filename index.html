@@ -3,36 +3,152 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicio4</title>
-        <link rel="stylesheet" href="CSS/style.css">
+        <title>
+            Ejercicio1
+        </title>
     </head>
     <body>
-        <div class="container">
-            <header>
-                <h1>
-                    Header
-                </h1>
-            </header>
-            <aside>
-                <h1>
-                    Left
-                </h1>
-            </aside>
-            <article>
-                <h1>
-                    Artículo
-                </h1>
-            </article>
-            <aside>
-                <h1>
-                    Right
-                </h1>
-            </aside>
-            <footer>
-                <h1>
-                    Footer
-                </h1>
-            </footer>
-        </div>
+        <h1>
+            Formularios
+        </h1>
+        <form>
+            <fieldset style="border-radius: 10px;">
+                <fieldset>
+                    <legend>
+                        Datos personales
+                    </legend>
+                    Nombre
+                    <input type="text" name="Nombre" required>
+                    Apellidos
+                    <input type="text" name="Apellidos" placeholder="Los dos apellidos">
+                    <br>
+                    <br>
+                    Edad
+                    <input type="number" name="Edad">
+                    Sexo
+                    <input type="radio" name="Mujer">
+                    Mujer
+                    <input type="radio" name="Hombre">
+                    Hombre
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Datos de contacto
+                    </legend>
+                    Email
+                    <input type="text" name="Email" required>
+                    Dirección
+                    <input type="text" name="Direccion" placeholder="Calle, nº, ciudad, provincia">
+                    <br>
+                    Código postal
+                    <input type="number" name="CodigoPostal">
+                    Ciudad
+                    <input type="text" name="CodigoPostal" placeholder="Madrid">
+                    Provinvia
+                    <select name="Provincia">
+                        <option value="Huelva">
+                            Huelva
+                        </option>
+                        <option value="Sevilla">
+                            Sevilla
+                        </option>
+                        <option value="Cordoba">
+                            Córdoba
+                        </option>
+                        <option value="Jaen">
+                            Jaén
+                        </option>
+                        <option value="Granada">
+                            Granada
+                        </option>
+                        <option value="Almeria">
+                            Almería
+                        </option>
+                        <option value="Malaga">
+                            Málaga
+                        </option>
+                        <option value="Cadiz">
+                            Cádiz
+                        </option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Datos de reserva
+                    </legend>
+                    Fecha
+                    <input type="date" name="Fecha" placeholder="23/01/2019">
+                    Hora
+                    <input type="datetime" name="Hora" placeholder="Los dos apellidos">
+                    Habitación
+                    <select name="Habitacion">
+                        <option value="Individual">
+                            Individual
+                        </option>
+                        <option value="Doble">
+                            Doble
+                        </option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Preferencias
+                    </legend>
+                    Frutos secos
+                    <select name="FrutosSecos" multiple>
+                        <option value="Albaricoque">
+                            Albaricoques
+                        </option>
+                        <option value="Cerezas">
+                            Cerezas
+                        </option>
+                        <option value="Fresas">
+                            Fresas
+                        </option>
+                        <option value="Melocotones">
+                            Melocotones
+                        </option>
+                        <option value="NoLoSe">
+                            No lo sé
+                        </option>
+                    </select>
+                    Refrescos
+                    <input type="number" name="Refrescos">
+                    <br>
+                    <br>
+                    Ingredientes:
+                    <br>
+                    Pimiento
+                    <input type="checkbox" name="Pimiento" value="Pimiento">
+                    Champiñón
+                    <input type="checkbox" name="Champinon" value="Champinon">
+                    ExtraQueso
+                    <input type="checkbox" name="ExtraQueso" value="Pimiento">
+                    <br>
+                    <br>
+                    <input type="color">
+                    <br>
+                    Sugerencias
+                    <br>
+                    <textarea name="Sugerencias" cols="245" rows="10">
+                    </textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Varios
+                    </legend>
+                    Fotos
+                    <input type="file" name="Fotos">
+                    Currículum (PDF)
+                    <input type="file" name="Curriculum">
+                </fieldset>
+                <fieldset>
+                    <input type="submit" onclick="alert('Datos enviados')" value="Enviar datos" style="background-color: #ff6600; border-color: #ff6600; color: white;">
+                    <input type="reset" onclick="alert('Datos borrados')" value="Borrar datos" style="background-color: white; border-color: #ff6600; color: gray;">
+                    <br>
+                    <input type="button" onclick="alert('Ni das palo al agua')" value="Yo no hago nada" style="background-color: white; border-color: #ff6600; color: gray;">
+                </fieldset>
+            </fieldset>
+        </form>
     </body>
 </html>
